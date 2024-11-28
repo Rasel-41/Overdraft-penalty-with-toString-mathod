@@ -1,8 +1,8 @@
+package EmployeeWorkerProblem;
+
 public class Employee {
-    private String name ;
+    private String name;
     private double baseSalary;
-
-
 
     public void setName(String name) {
         this.name = name;
@@ -20,8 +20,11 @@ public class Employee {
         return baseSalary;
     }
 
-
+    @Override
     public String toString() {
-        return "Employee name :" + getName() + " Base salary :" + getSalary();
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", baseSalary=" + baseSalary +
+                '}';
     }
 }
